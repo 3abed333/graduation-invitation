@@ -4,13 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>دعوة عشاء التخرّج</title>
-  <meta name="description" content="نتشرّف بدعوتكم لمشاركتنا فرحة التخرّج من كلية لومينوس الجامعية التقنية على مأدبة عشاء.">
+  <meta name="description" content="نتشرّف بدعوتكم لمشاركتنا فرحة تخرّج عبد الرحمن محمد عابد من كلية لومينوس الجامعية التقنية على مأدبة عشاء.">
   <meta name="theme-color" content="#0C1630">
 
   <!-- معاينة الرابط على واتساب وفيسبوك -->
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ar_JO">
-  <meta property="og:title" content="دعوة عشاء التخرّج 🎓">
+  <meta property="og:title" content="دعوة عشاء تخرّج عبد الرحمن محمد عابد 🎓">
   <meta property="og:description" content="الثلاثاء 13/10 · من 6 حتى 9 مساءً · Mirage Restaurant &amp; Cafe، عمّان">
   <meta property="og:image" content="https://3abed333.github.io/graduation-invitation/card.jpg">
   <meta property="og:image:width" content="1200">
@@ -171,6 +171,29 @@
       text-wrap: pretty;
     }
     .msg b { color: var(--ink); font-weight: 800; }
+    .grad + .msg { margin-top: 10px; }
+
+    /* اسم الخرّيج */
+    .grad {
+      margin: 10px auto 0;
+      padding: 14px 16px 16px;
+      border-radius: 20px;
+      background: radial-gradient(ellipse at 50% 0%, rgba(235,213,150,.35), transparent 70%), var(--tint);
+      box-shadow: inset 0 0 0 1px rgba(201,162,75,.45);
+    }
+    .grad-label {
+      display: inline-block;
+      font-size: .8rem; font-weight: 700; letter-spacing: .5px;
+      color: var(--gold-deep);
+    }
+    .grad-name {
+      font-family: "Aref Ruqaa", "Amiri", serif;
+      font-weight: 700;
+      font-size: clamp(1.9rem, 8.6vw, 2.35rem);
+      line-height: 1.45;
+      color: var(--ink);
+    }
+    .grad-from { display: block; font-size: .92rem; font-weight: 700; color: var(--text); }
 
     /* التفاصيل */
     .details {
@@ -218,10 +241,9 @@
       font-size: .82rem; font-weight: 700;
       white-space: nowrap;
     }
-    .chip svg { width: 14px; height: 14px; }
-    .chip.yes { color: var(--ink); background: var(--tint); box-shadow: inset 0 0 0 1px rgba(201,162,75,.55); }
-    .chip.yes svg { color: var(--gold-deep); }
-    .chip.no  { color: #8E3B3B; background: #F8ECEC; box-shadow: inset 0 0 0 1px rgba(142,59,59,.25); }
+    .chip { color: var(--ink); background: var(--tint); box-shadow: inset 0 0 0 1px rgba(201,162,75,.55); }
+    .chip svg { width: 14px; height: 14px; color: var(--gold-deep); }
+    .or { align-self: center; font-size: .82rem; color: var(--muted); }
 
     /* عدد الأشخاص */
     .seats {
@@ -352,10 +374,17 @@
 
       <p class="msg">
         بقلوبٍ يغمرها الفرح، وبعد رحلةٍ من الجدّ والاجتهاد،
-        <b>نتشرّف بدعوتكم</b> لمشاركتنا فرحة التخرّج من
-        <b>كلية لومينوس الجامعية التقنية</b>،
-        وذلك على مأدبة عشاءٍ تُقام بهذه المناسبة السعيدة.
+        <b>نتشرّف بدعوتكم</b> لمشاركتنا فرحة تخرّج
       </p>
+
+      <div class="grad">
+        <span class="grad-label">الخرّيج</span>
+        <!-- ✏️ اسم الخرّيج -->
+        <p class="grad-name">عبد الرحمن محمد عابد</p>
+        <span class="grad-from">من كلية لومينوس الجامعية التقنية</span>
+      </div>
+
+      <p class="msg">وذلك على مأدبة عشاءٍ تُقام بهذه المناسبة السعيدة.</p>
 
       <div class="details">
         <div class="row">
@@ -403,13 +432,14 @@
             <!-- ✏️ اللباس -->
             <span class="val">رسمي <bdi dir="ltr">(Formal)</bdi></span>
             <span class="dress">
-              <span class="chip yes">
+              <span class="chip">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>
-                مثل: قميص وبنطلون
+                ملابس فورمال
               </span>
-              <span class="chip no">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
-                بدون فساتين سهرة
+              <span class="or">أو</span>
+              <span class="chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>
+                فساتين فورمال
               </span>
             </span>
           </span>
